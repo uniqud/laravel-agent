@@ -1,0 +1,40 @@
+{
+    "name": "uniqud/laravel-agent",
+    "type": "library",
+    "description": "Laravel Agent",
+    "keywords": ["laravel", "agent"],
+    "homepage": "https://uniqud.com",
+    "license": "",
+    "authors": [
+        {
+            "name": "Mohsen Sadeghzade",
+            "email": "hi@techiefor.fun"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.0 | ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uniqud\\LaravelAgent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uniqud\\LaravelAgent\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uniqud\\LaravelAgent\\ServiceProvider"
+            ]
+        }
+    }
+}

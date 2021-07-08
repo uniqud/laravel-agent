@@ -1,0 +1,5 @@
+/vendor
+.env
+.env.testing
+.phpunit.result.cache
+TODO
